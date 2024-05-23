@@ -1,0 +1,10 @@
+name = "TWC Mission Making Framework";
+picture = "twc_logo_512.paa";
+logo = "twc_logo_64.paa";
+logoOver = "twc_logo_64.paa";
+tooltip = "TWC Mission Making Framework";
+tooltipOwned = "TWC Owned";
+overview = "TWC Mission Making Framework is a collection of scripts made by TWC members.";
+overviewPicture = "twc_logo_512.paa";
+author = "TWC Team";
+description = "TWC Mission Making Framework is a collection of scripts made by TWC members.";
