@@ -3,7 +3,6 @@ class CfgFunctions {
 		class functions {
 			file = "twc_framework\functions";
 			class Artillery{};
-			class BattlefieldSounds {};
 			class briefingLoadout {};
 			class charge {};
 			class daisyCutter{};
@@ -18,7 +17,6 @@ class CfgFunctions {
 			
 			/** Player Messaging **/
 			class intelHint {};
-			class intelHintWithVariable {};
 			class CommandMessage {};
 		};
 		

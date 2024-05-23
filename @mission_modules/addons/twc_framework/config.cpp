@@ -16,7 +16,6 @@ class CfgPatches {
 			"cba_ai",
 			"A3_Modules_F",
 			"ace_magazinerepack",
-			"TWC_Core",
 			"TWC_Sounds"
 		};
 
@@ -30,47 +29,10 @@ class CfgPatches {
 
 class CfgFactionClasses {
 	class NO_CATEGORY;
-
-	class twc_missionSetup: NO_CATEGORY {
-		displayName = "TWC - Mission Prep (Mgmt Use Mainly)";
-	};
-
-	class twc_zeus: NO_CATEGORY {
-		displayName = "TWC - Zeus";
-	};
-	
 	class twc_mission_framework: NO_CATEGORY {
 		displayName = "TWC - Mission Framework";
 	};
 	
-	class twc_cache_modules: NO_CATEGORY {
-		displayName = "TWC - Cache Modules";
-	};
-};
-
-class CfgEditorCategories {
-	class TWC_Prep {
-		displayName = "TWC Operations Mission Prep";
-	};
-};
-
-class CfgEditorSubcategories {
-	class twc_subPrep {
-		displayName = "Compositions";
-	};
-};
-
-class Cfg3DEN {
-	class Compositions {
-		class TWC_MissionPREP {
-			path="twc_framework\compositions\missionprep";
-			side = 1;
-			displayName = "TWC Mission Prep Comp";
-			editorCategory = "TWC_Prep";
-			editorSubCategory = "twc_subPrep";
-			useSideColorOnIcon = 0;
-		};
-	};
 };
 
 #include "CfgAmmo.hpp"
