@@ -5,6 +5,8 @@ class CfgFunctions {
 			
 			class clientInit {};
 			class play {};
+			class removeMedicalItem {};
+			class addItem {};
 		};
 	};
 };
