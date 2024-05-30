@@ -28,7 +28,7 @@ class CfgVehicles {
 	
 	class TWC_ModuleOrdnanceMortar_HE_Rocket: ModuleOrdnanceMortar_F {
 		scope = 1;
-		ammo = "CUP_R_GRAD_HE";
+		ammo = "12Rnd_230mm_rockets";
 	};
 	class TWC_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
@@ -211,43 +211,6 @@ class CfgVehicles {
 			sync[] = {"EmptyDetector"};
 		};
 	};	
-
-	class TWC_Module_Charge: Module_F {
-		author = "[TWC] Rik";
-		category = "twc_mission_framework";
-		displayName = "Charge";
-		function = "twc_fnc_moduleCharge";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 1;
-		icon = "\twc_framework\ui\movable_units_ca.paa";
-		functionPriority = 5;
-		isDisposable = 0;
-
-		class Arguments {
-			class Banzai {
-				displayName = "Banzai Sounds";
-				description = "Whether the units should yell Banzai every 8 seconds";
-				typeName = "BOOL";
-				defaultValue = "Yes";
-				class Values {
-					class Yes {
-						name = "Yes";
-						value = true;
-					};
-					class No {
-						name = "No";
-						value = false;
-					};
-				};
-			};
-		};
-
-		class ModuleDescription: ModuleDescription {
-			description = "Makes units charge relentlessly to a location, without stopping to engage until they arrive.";
-			sync[] = {"EmptyDetector"};
-		};
-	};
 	
 	class TWC_Module_CommandMessage: Module_F {
 		author = "[TWC] Bosenator & jayman";

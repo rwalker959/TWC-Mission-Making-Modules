@@ -17,6 +17,11 @@ class CfgAmmo
 		displayname = "155mm Dummy Round";
 		hit = 0;
 		indirectHit = 0;
+		explosive = 1;
+		whistleDist = 5000;
+		whistleOnFire = 1;
+ 		ace_frag_enabled = 0;
+		CraterEffects = "ExploAmmoCrater";
 	};
 	class twc_dummyround_artillery_big: ModuleOrdnanceRocket_F_ammo
 	{

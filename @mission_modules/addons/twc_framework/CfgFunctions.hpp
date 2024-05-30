@@ -30,7 +30,6 @@ class CfgFunctions {
 			class moduleWaveSpawnInit {};
 			class moduleArtillery {};
 			class moduleCommandMessage{};
-			class moduleCharge {};
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};
 			class moduleDaisyCutter{};
