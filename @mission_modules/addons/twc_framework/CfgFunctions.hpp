@@ -2,6 +2,10 @@ class CfgFunctions {
 	class TWC {
 		class functions {
 			file = "twc_framework\functions";
+			
+			
+			class getTopRanks {};
+			class isHighestRank {};
 			class Artillery{};
 			class briefingLoadout {};
 			class charge {};
