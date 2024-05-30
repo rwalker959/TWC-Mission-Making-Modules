@@ -11,6 +11,9 @@ class CfgAmmo
 		displayname = "82mm Dummy Round";
 		hit = 0;
 		indirectHit = 0;
+		explosive = 1;
+ 		ace_frag_enabled = 0;
+		CraterEffects = "ExploAmmoCrater";
 	};
 	class twc_dummyround_artillery_medium: ModuleOrdnanceHowitzer_F_ammo
 	{
@@ -28,6 +31,9 @@ class CfgAmmo
 		displayname = "203mm Dummy Round";
 		hit = 0;
 		indirectHit = 0;
+		explosive = 1;
+ 		ace_frag_enabled = 0;
+		CraterEffects = "ExploAmmoCrater";
 	};
 
 	class twc_ammo_artillery_illumination: F_40mm_White

@@ -82,17 +82,17 @@ class CfgVehicles {
 					};
 					class HE_Harmless_small
 					{
-						name="HE Harmless (Small)";
+						name="HE Harmless (81mm Mortar)";
 						value="HE_Harmless_Small";
 					};
 					class HE_Harmless_medium
 					{
-						name="HE Harmless (Medium)";
+						name="HE Harmless (155mm Artillery)";
 						value="HE_Harmless_Medium";
 					};
 					class HE_Harmless_big
 					{
-						name="HE Harmless (Big)";
+						name="HE Harmless (230mm Rocket)";
 						value="HE_Harmless_Big";
 					};
 					class Smoke
