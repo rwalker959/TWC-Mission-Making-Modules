@@ -4,8 +4,8 @@ class CfgFunctions {
 			file = "twc_framework\functions";
 			
 			
-			class getTopRanks {};
 			class isHighestRank {};
+			class getTopRanks {};
 			class Artillery{};
 			class briefingLoadout {};
 			class charge {};
