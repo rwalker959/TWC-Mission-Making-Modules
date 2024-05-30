@@ -415,7 +415,7 @@ class CfgVehicles {
 		displayName = "Wave Spawn";
 		function = "twc_fnc_moduleWaveSpawn";
 		scope = 2;
-		isGlobal = 0;
+		isGlobal = 1;
 		isTriggerActivated = 1;
 		icon = "\twc_framework\ui\wave_spawn_ca.paa";
 		functionPriority = 1;
