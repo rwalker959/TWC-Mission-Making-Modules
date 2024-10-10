@@ -9,6 +9,7 @@ class CfgFunctions {
 			class movableUnits{};
 			class virtualMortar{};
 			class doStop{};
+			class AttackPlane {};
 		};
 		
 		
@@ -16,6 +17,7 @@ class CfgFunctions {
 			file = "twc_framework\modules";
 			class moduleStationaryUnits {};
 			class moduleMovableUnits {};
+			class moduleAttackPlane{};
 			class moduleVirtualArtillery {};
 			class moduleLightsSwitch{};
 			class moduleDaisyCutter{};

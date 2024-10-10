@@ -264,4 +264,44 @@ class CfgVehicles {
 			sync[] = {"AnyAI"};
 		};
 	};
+class TWC_Module_AttackPlane: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Attack Plane";
+		function = "twc_fnc_moduleAttackPlane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Patrol
+			{
+				displayName="Patrol";
+				description="Marker plane will patrol around";
+				typeName="String";
+				defaultValue="";
+			};
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius plane will fly around marker";
+				typeName="Number";
+				defaultValue=0;
+			};
+			class Type
+			{
+				displayName="Type Of Attack Plane";
+				description="ClassName";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
 };

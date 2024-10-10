@@ -5,7 +5,11 @@ class CfgPatches {
 			"TWC_Module_MovableUnits",
 			"TWC_Module_VirtualArtillery",
 			"TWC_Module_DaisyCutter",
-			"TWC_Module_dostop"
+			"TWC_Module_dostop",
+			"TWC_Module_Ambient_AttackPlane_Gun",
+			"TWC_Module_Ambient_AttackPlane_Missile",
+			"TWC_Module_Ambient_AttackPlane_GunMissile",
+			"TWC_Module_Ambient_AttackPlane_Bomb"
 		};
 		
 		weapons[] = {};
@@ -34,7 +38,5 @@ class CfgFactionClasses {
 };
 
 #include "CfgAmmo.hpp"
-#include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgWaypoints.hpp"
