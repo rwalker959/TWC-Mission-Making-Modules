@@ -5,6 +5,7 @@ class CfgFunctions {
 			class LightsSwitch{};
 			class stationaryUnits{};
 			class movableUnits{};
+			class daisyCutter{};
 			class virtualMortar{};
 			class doStop{};
 			class AttackPlane {};

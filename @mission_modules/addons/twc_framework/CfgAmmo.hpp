@@ -3,6 +3,7 @@ class CfgAmmo
 	class ModuleOrdnanceMortar_F_ammo;
 	class ModuleOrdnanceHowitzer_F_ammo;
 	class ModuleOrdnanceRocket_F_ammo;
+	class Smoke_120mm_AMOS_White;
 	class F_40mm_White;
 	class F_40mm_Cir;
 
