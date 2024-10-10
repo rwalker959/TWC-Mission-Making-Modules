@@ -146,7 +146,224 @@ class CfgVehicles {
 			sync[] = {"EmptyDetector"};
 		};
 	};
-	
+		class TWC_Module_Ambient_AttackPlane: ModuleCAS_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Attack Plane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Type
+			{
+				description = "";
+				displayName = "Type";
+				typeName = "NUMBER";
+				class values
+				{
+					class Bomb
+					{
+						name = "CAS - Bomb Strike";
+						value = 3;
+					};
+					class Gun
+					{
+						default = 1;
+						name = "CAS - Gun Run";
+						value = 0;
+					};
+					class GunMissiles
+					{
+						name = "CAS - Gun and Missiles";
+						value = 2;
+					};
+					class Missiles
+					{
+						name = "CAS - Missile Strike";
+						value = 1;
+					};
+				};
+			};
+			class Vehicle
+			{
+				description = "";
+				displayName = "Plane";
+				class values
+				{
+					class Bf110_DE
+					{
+						name = "Bf-110 (DE)";
+						value = "sab_bf110";
+					};
+					class Fw190_DE
+					{
+						name = "Fw-190 (DE)";
+						value = "LIB_FW190F8_2";
+					};
+					class Fw190_DE_Desert
+					{
+						name = "Fw-190 (DE, Desert)";
+						value = "LIB_FW190F8_Italy";
+					};
+					class Ju87_DE
+					{
+						name = "Ju-87 (DE)";
+						value = "TWC_B_Ju87_SingleSeat";
+					};
+					class Ju87_DE_Italy
+					{
+						name = "Ju-87 (DE, Italy)";
+						value = "TWC_B_Ju87_SingleSeat_Italy";
+					};
+					class Ju87_DE_Desert
+					{
+						name = "Ju-87 (DE, Desert)";
+						value = "TWC_B_Ju87_SingleSeat_Desert";
+					};
+					class He111_DE
+					{
+						name = "He-111 (DE)";
+						value = "TWC_B_He111_SingleSeat";
+					};
+					class Spitfire_UK
+					{
+						name = "Spitfire (UK)";
+						value = "spitfire_v_G";
+					};
+					class Hellcat_US
+					{
+						name = "Hellcat (US)";
+						value = "fow_va_f6f_c";
+					};
+					class Hellcat_UK
+					{
+						name = "Hellcat (UK)";
+						value = "fow_va_f6f_c_faa";
+					};
+					class P47_US
+					{
+						name = "P-47 (US)";
+						value = "LIB_P47";
+					};
+					class SU34_RU
+					{
+						name = "Su-34 (RU)";
+						value = "CUP_O_SU34_RU";
+					};
+					class SU25_RU
+					{
+						name = "Su-25 (RU)";
+						value = "CUP_O_Su25_Dyn_RU";
+					};
+					class SU17_RU
+					{
+						name = "Su-17 (RU)";
+						value = "BCCCCP_Su17";
+					};
+					class SU34_SLA
+					{
+						name = "SU-34 (SLA)";
+						value = "CUP_O_SU34_SLA";
+					};
+					class SU25_SLA
+					{
+						name = "SU-25 (SLA)";
+						value = "CUP_O_Su25_Dyn_SLA";
+					};
+					class SU25_TK
+					{
+						name = "SU-25 (TK)";
+						value = "CUP_O_Su25_Dyn_TKA";
+					};
+					class L39_TK
+					{
+						name = "L-39 (TK)";
+						value = "CUP_O_L39_TK";
+					};
+					class AV8B_USMC
+					{
+						name = "AV-8B (USMC)";
+						value = "CUP_B_AV8B_DYN_USMC";
+					};
+					class F35B_USMC
+					{
+						name = "F35B (USMC)";
+						value = "CUP_B_F35B_USMC";
+					};
+					class A10_US
+					{
+						name = "A-10 (US)";
+						value = "CUP_B_A10_DYN_USA";
+					};
+					class HGR3_UK
+					{
+						name = "Harrier GR.3 (UK)";
+						value = "TWC_Vehicle_ColdWar_HarrierGR3_RAF";
+					};
+					class HGR5_UK
+					{
+						name = "Harrier GR.5 (UK)";
+						value = "TWC_Vehicle_Millennial_HarrierGR5_RAF";
+					};
+					class HGR9_UK
+					{
+						name = "Harrier GR.9 (UK)";
+						value = "TWC_Vehicle_Modern_HarrierGR9_RAF";
+					};
+					class F35_UK
+					{
+						name = "F35B (UK)";
+						value = "CUP_B_F35B_BAF";
+					};
+					class L39_CZ
+					{
+						name = "L-39 (CZ)";
+						value = "CUP_B_L39_CZ_GREY";
+					};
+					class SU25_CDF
+					{
+						name = "SU-25 (CDF)";
+						value = "CUP_B_Su25_Dyn_CDF";
+					};
+					class SU34_CDF
+					{
+						name = "SU-34 (CDF)";
+						value = "CUP_B_SU34_CDF";
+					};
+				};
+			};
+		};
+		class ModuleDescription {
+			description = "Call in Ambient Attack Plane, automatically despawned";
+			sync[] = {""};
+		};
+	};
+	class TWC_Module_Ambient_AttackPlane_Gun: TWC_Module_Ambient_AttackPlane {
+		displayName = "Ambient Attack Plane (Gun)";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		isTriggerActivated = 0;
+		curatorCanAttach = 1;
+		curatorInfoType = "RscDisplayAttributesModuleCAS";
+		moduleCAStype = 0;
+	};
+	class TWC_Module_Ambient_AttackPlane_Missile: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Missile)";
+		moduleCAStype = 1;
+	};
+	class TWC_Module_Ambient_AttackPlane_GunMissile: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Gun/Missile)";
+		moduleCAStype = 2;
+	};
+	class TWC_Module_Ambient_AttackPlane_Bomb: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Bomb)";
+		moduleCAStype = 3;
+	};
 	class TWC_Module_LightsSwitch: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
