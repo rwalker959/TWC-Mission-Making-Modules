@@ -2,8 +2,6 @@ class CfgFunctions {
 	class TWC {
 		class functions {
 			file = "twc_framework\functions";
-			
-			class Artillery{};
 			class LightsSwitch{};
 			class stationaryUnits{};
 			class movableUnits{};
