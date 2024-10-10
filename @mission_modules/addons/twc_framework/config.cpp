@@ -1,11 +1,10 @@
 class CfgPatches {
 	class twc_framework {
 		units[] = {
-			"TWC_Module_CommandMessage",
 			"TWC_Module_StationaryUnits",
 			"TWC_Module_MovableUnits",
 			"TWC_Module_VirtualArtillery",
-			"TWC_Module_IntelHint",
+			"TWC_Module_DaisyCutter",
 			"TWC_Module_dostop"
 		};
 		

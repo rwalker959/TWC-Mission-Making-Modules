@@ -44,7 +44,7 @@ class CfgVehicles {
 	};
 	class TWC_ModuleOrdnanceMortar_Smoke: ModuleOrdnanceMortar_F {
 		scope = 1;
-		ammo = "SmokeShell";
+		ammo = "6Rnd_155mm_Mo_smoke";
 	};
 	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
 		scope = 1;
@@ -144,151 +144,6 @@ class CfgVehicles {
 		class ModuleDescription: ModuleDescription {
 			description = "Call in Virtual Artillery";
 			sync[] = {"EmptyDetector"};
-		};
-	};
-	
-	class TWC_Module_Artillery: Module_F {
-		author = "[TWC] Rik";
-		category = "twc_mission_framework";
-		displayName = "Artillery";
-		function = "twc_fnc_moduleArtillery";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 1;
-		isDisposable = 0;
-		icon = "\twc_framework\ui\virtual_artillery_ca.paa";
-		functionPriority = 1;
-		class Arguments {
-			class Type
-			{
-				displayName="Type";
-				description="Type Of Ordinance";
-				typeName="STRING";
-				defaultValue="HE";
-				class values
-				{
-					class HE
-					{
-						name="HE";
-						value="HE";
-					};
-					class Smoke
-					{
-						name="Smoke";
-						value="SMOKE";
-					};
-					class Illum
-					{
-						name="Illum";
-						value="ILLUM";
-					};
-				};
-			};
-			class Rounds
-			{
-				displayName = "Rounds";
-				description="Number of rounds";
-				typeName="Number";
-				defaultValue=5;
-			};
-			class Dispersion
-			{
-				displayName = "Dispersion";
-				description="Dispersion diameter";
-				typeName="Number";
-				defaultValue=250;
-			};
-			class Delay
-			{
-				displayName = "Delay";
-				description="Delay between rounds";
-				typeName="Number";
-				defaultValue=10;
-			};
-		};
-		class ModuleDescription: ModuleDescription {
-			description = "Call in Virtual Artillery";
-			sync[] = {"EmptyDetector"};
-		};
-	};	
-	
-	class TWC_Module_CommandMessage: Module_F {
-		author = "[TWC] Bosenator & jayman";
-		category = "twc_mission_framework";
-		displayName = "Command Message";
-		function = "twc_fnc_moduleCommandMessage";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 1;
-		icon = "\twc_framework\ui\command_message_ca.paa";
-		functionPriority = 5;
-		isDisposable = 0;
-
-		class Arguments {
-			class Message {
-				displayName="Message";
-				description="Text To Display";
-				typeName="String";
-				defaultValue="";
-			};
-		};
-
-		class ModuleDescription: ModuleDescription {
-			description = "Send Command A Message";
-			sync[] = {"EmptyDetector"};
-		};
-	};
-	
-	class TWC_Module_IntelHint: Module_F {
-		author = "[TWC] Bosenator & jayman";
-		category = "twc_mission_framework";
-		displayName = "Intel Action Hint";
-		function = "twc_fnc_moduleIntelHint";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		icon = "\twc_framework\ui\intel_action_ca.paa";
-		functionPriority = 1;
-		isDisposable = 0;
-		class Arguments
-		{
-			class Title
-			{
-				displayName="Title";
-				description="Title To Display";
-				typeName="String";
-				defaultValue="";
-			};
-			class Message
-			{
-				displayName="Message";
-				description="Text To Display";
-				typeName="String";
-				defaultValue="";
-			};
-			
-			class Access {
-				displayName = "Who Can Interact";
-				description = "Who can activate this hint?";
-				typeName = "Number";
-				defaultValue = "0";
-				
-				class Values {
-					class 0 {
-						name = "Anybody";
-						value = 0;
-					};
-					
-					class 1 {
-						name = "Highest Two Ranks";
-						value = 1;
-					};
-				};
-			};
-		};
-		class ModuleDescription: ModuleDescription {
-			description = "Intel Hint";
-			sync[] = {""};
 		};
 	};
 	
@@ -407,36 +262,6 @@ class CfgVehicles {
 		class ModuleDescription: ModuleDescription {
 			description = "Set Unit(s) as Stationary until contacted by players";
 			sync[] = {"AnyAI"};
-		};
-	};
-	class TWC_Module_WaveSpawn: Module_F {
-		author = "[TWC] Rik";
-		category = "twc_mission_framework";
-		displayName = "Wave Spawn";
-		function = "twc_fnc_moduleWaveSpawn";
-		scope = 2;
-		isGlobal = 1;
-		isTriggerActivated = 1;
-		icon = "\twc_framework\ui\wave_spawn_ca.paa";
-		functionPriority = 1;
-		isDisposable = 0;
-		class Arguments {
-			class Delay {
-				displayName = "Delay";
-				description = "Time between Waves in seconds";
-				typeName = "NUMBER";
-				defaultValue = 0;
-			};
-			class MaxWaves {
-				displayName = "Max Waves";
-				description = "Maximum amount of Waves to come";
-				typeName = "NUMBER";
-				defaultValue = 1;
-			};
-		};
-		class ModuleDescription: ModuleDescription {
-			description = "Wave Spawn";
-			sync[] = {""};
 		};
 	};
 };

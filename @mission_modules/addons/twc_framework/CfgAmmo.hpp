@@ -21,7 +21,7 @@ class CfgAmmo
 		hit = 0;
 		indirectHit = 0;
 		explosive = 1;
-		whistleDist = 5000;
+		whistleDist = 50;
 		whistleOnFire = 1;
  		ace_frag_enabled = 0;
 		CraterEffects = "ExploAmmoCrater";
