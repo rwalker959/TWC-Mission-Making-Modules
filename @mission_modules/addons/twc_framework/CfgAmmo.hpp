@@ -21,7 +21,7 @@ class CfgAmmo
 		hit = 0;
 		indirectHit = 0;
 		explosive = 1;
-		whistleDist = 50;
+		whistleDist = 200;
 		whistleOnFire = 1;
  		ace_frag_enabled = 0;
 		CraterEffects = "ExploAmmoCrater";
@@ -35,11 +35,17 @@ class CfgAmmo
  		ace_frag_enabled = 0;
 		CraterEffects = "ExploAmmoCrater";
 	};
-
 	class twc_ammo_artillery_illumination: F_40mm_White
 	{
 		intensity = 60000;
 		coefGravity = 0.25;
+	};
+	class twc_ammo_smoke: Smoke_120mm_AMOS_White
+	{
+		hit = 0;
+		indirectHit = 0;
+		explosive = 1;
+ 		ace_frag_enabled = 0;
 	};
 	class twc_ammo_artillery_illumination_ir: F_40mm_Cir
 	{

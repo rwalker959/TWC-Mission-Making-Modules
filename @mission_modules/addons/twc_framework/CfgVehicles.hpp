@@ -44,7 +44,7 @@ class CfgVehicles {
 	};
 	class TWC_ModuleOrdnanceMortar_Smoke: ModuleOrdnanceMortar_F {
 		scope = 1;
-		ammo = "6Rnd_155mm_Mo_smoke";
+		ammo = "twc_ammo_smoke";
 	};
 	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
 		scope = 1;
