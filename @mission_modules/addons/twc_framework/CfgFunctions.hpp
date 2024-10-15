@@ -14,6 +14,8 @@ class CfgFunctions {
 			class intelHint {};
 			class intelHintWithVariable {};
 			class CommandMessage {};
+			class getPlayersWithinRange {};
+			class speak {};
 		};
 		
 		
@@ -29,6 +31,7 @@ class CfgFunctions {
 			class moduleIntelHint{};
 			class moduleIntelHintWithVariable{};
 			class moduleCommandMessage{};
+			class moduleSpeak {};
 		};
 
 	};
