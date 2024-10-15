@@ -2,6 +2,8 @@ class CfgFunctions {
 	class TWC {
 		class functions {
 			file = "twc_framework\functions";
+			class isHighestRank {};
+			class getTopRanks {};
 			class LightsSwitch{};
 			class stationaryUnits{};
 			class movableUnits{};
@@ -9,6 +11,9 @@ class CfgFunctions {
 			class virtualMortar{};
 			class doStop{};
 			class AttackPlane {};
+			class intelHint {};
+			class intelHintWithVariable {};
+			class CommandMessage {};
 		};
 		
 		
@@ -21,6 +26,9 @@ class CfgFunctions {
 			class moduleLightsSwitch{};
 			class moduleDaisyCutter{};
 			class moduledostop {};
+			class moduleIntelHint{};
+			class moduleIntelHintWithVariable{};
+			class moduleCommandMessage{};
 		};
 
 	};

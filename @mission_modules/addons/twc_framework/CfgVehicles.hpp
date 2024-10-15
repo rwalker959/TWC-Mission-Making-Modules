@@ -364,6 +364,144 @@ class CfgVehicles {
 		displayName = "Ambient Attack Plane (Bomb)";
 		moduleCAStype = 3;
 	};
+class TWC_Module_IntelHint: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Intel Action Hint";
+		function = "twc_fnc_moduleIntelHint";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = "\twc_framework\ui\intel_action_ca.paa";
+		functionPriority = 1;
+		isDisposable = 0;
+		class Arguments
+		{
+			class Title
+			{
+				displayName="Title";
+				description="Title To Display";
+				typeName="String";
+				defaultValue="";
+			};
+			class Message
+			{
+				displayName="Message";
+				description="Text To Display";
+				typeName="String";
+				defaultValue="";
+			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Intel Hint";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_IntelHintWithVariable: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Intel Action Hint with Variable";
+		function = "twc_fnc_moduleIntelHintWithVariable";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = "\twc_framework\ui\intel_action_variable_ca.paa";
+		functionPriority = 1;
+		isDisposable = 0;
+		
+		class Arguments {
+			class Title {
+				displayName = "Title";
+				description = "Title To Display";
+				typeName = "String";
+				defaultValue = "";
+			};
+
+			class Message {
+				displayName = "Message";
+				description = "Text To Display";
+				typeName = "String";
+				defaultValue = "";
+			};
+
+			class VariableName {
+				displayName = "Variable Name";
+				description = "Name of the GLOBAL variable to use";
+				typeName = "String";
+				defaultValue = "";
+			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Intel Hint with Variable";
+			sync[] = {""};
+		};
+	};
+	class TWC_Module_CommandMessage: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Command Message";
+		function = "twc_fnc_moduleCommandMessage";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\command_message_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Message {
+				displayName="Message";
+				description="Text To Display";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send Command A Message";
+			sync[] = {"EmptyDetector"};
+		};
+	};
 	class TWC_Module_LightsSwitch: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
