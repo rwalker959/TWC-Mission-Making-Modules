@@ -548,6 +548,36 @@ class TWC_Module_IntelHint: Module_F {
 			sync[] = {""};
 		};
 	};
+	class TWC_Module_WaveSpawn: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Wave Spawn";
+		function = "twc_fnc_moduleWaveSpawn";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\wave_spawn_ca.paa";
+		functionPriority = 1;
+		isDisposable = 0;
+		class Arguments {
+			class Delay {
+				displayName = "Delay";
+				description = "Time between Waves in seconds";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+			class MaxWaves {
+				displayName = "Max Waves";
+				description = "Maximum amount of Waves to come";
+				typeName = "NUMBER";
+				defaultValue = 1;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Wave Spawn";
+			sync[] = {""};
+		};
+	};
 	
 	class TWC_Module_DaisyCutter: Module_F {
 		author = "[TWC] Bosenator & jayman";

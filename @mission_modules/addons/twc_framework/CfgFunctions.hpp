@@ -5,6 +5,8 @@ class CfgFunctions {
 			class isHighestRank {};
 			class getTopRanks {};
 			class LightsSwitch{};
+			class spawnGroup{};
+			class waveSpawn {};
 			class stationaryUnits{};
 			class movableUnits{};
 			class daisyCutter{};
@@ -24,6 +26,8 @@ class CfgFunctions {
 			class moduleAttackPlane{};
 			class moduleVirtualArtillery {};
 			class moduleLightsSwitch{};
+			class moduleWaveSpawn {};
+			class moduleWaveSpawnInit {};
 			class moduleDaisyCutter{};
 			class moduledostop {};
 			class moduleIntelHint{};
