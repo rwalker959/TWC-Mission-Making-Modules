@@ -85,7 +85,7 @@ class TWC_Backpack_ColdWar_Regular_AT: SP_Backpack_CarlGustavCarrier
 	};
 };
 
-class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier[[["UK3CB_BAF_L1A1_Wood","","","",["UK3CB_BAF_762_20Rnd",20],[],""],[],[],["sp_80para_combats_item",[["FISH_Cream_Kit_Europe",1],["ACE_fieldDressing",4],["ACE_elasticBandage",4],["ACE_packingBandage",4],["ACE_quikclot",4],["kat_chestSeal",1],["ACE_tourniquet",2],["kat_Painkiller",1,4],["murshun_cigs_lighter",1,100],["murshun_cigs_cigpack",1,20]]],["sp_webbing_58pattern_fightingorder_extra",[["UK3CB_BAF_762_20Rnd",4,20],["UK3CB_BAF_762_20Rnd_T",2,20],["UK3CB_BAF_SmokeShell",2,1],["CUP_HandGrenade_L109A1_HE",1,1]]],["SP_Backpack_CarlGustavCarrier",[["MAA_MAAWS_HE441_AB500",1,1],["MAA_MAAWS_GMM_HE",1,1],["MRAWS_HEAT_F",2,1],["UK3CB_BAF_762_20Rnd",1,20]]],"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_3","sp_accessories_scarf_od_brown",[],["","","ItemRadio","ItemCompass","ItemWatch","sp_accessories_gaiters_od"]],[]]
+class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
 {
 	scope = 1;
 	maximumLoad = 400;
@@ -97,7 +97,6 @@ class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier[[["UK3CB
 		ADD_MAGA(MAA_MAAWS_HE441_AB250,1);
 	};
 };
-
 
 class TWC_Backpack_ColdWar_Regular_Platoon_Commander: sp_webbing_58pattern_LargePack
 {
