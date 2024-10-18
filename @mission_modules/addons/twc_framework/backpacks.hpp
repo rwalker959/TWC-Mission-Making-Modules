@@ -57,7 +57,7 @@ class TWC_Backpack_ColdWar_Regular_MG: sp_webbing_58pattern_LargePack
 class TWC_Backpack_ColdWar_Regular_2iC: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
-	maximumLoad = 400;
+	maximumLoad = 450;
 	
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 12);
@@ -123,7 +123,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Sergeant: sp_webbing_58pattern_LargeP
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_762_20Rnd,20);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,15);
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T,8);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
 		ADD_MAGA(SP_32Rnd_9x19_L2A3_Sterling,5);
@@ -133,7 +133,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Medic: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 500;
+	maximumLoad = 400;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
@@ -158,7 +158,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Mortar: SP_Backpack_2InchCarrier
 	scope = 1;
 	maximumLoad = 500;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 10);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 12);
 		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 4);
 	};
 };
