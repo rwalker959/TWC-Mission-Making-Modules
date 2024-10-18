@@ -123,8 +123,8 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Sergeant: sp_webbing_58pattern_LargeP
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_762_20Rnd,15);
-		ADD_MAGA(UK3CB_BAF_762_20Rnd_T,8);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,14);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd_T,5);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
 		ADD_MAGA(SP_32Rnd_9x19_L2A3_Sterling,5);
 	};
@@ -133,7 +133,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Medic: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 400;
+	maximumLoad = 420;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
