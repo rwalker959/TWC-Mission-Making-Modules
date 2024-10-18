@@ -27,7 +27,7 @@ class TWC_Backpack_ColdWar_Regular_SectionCommander: sp_webbing_58pattern_LargeP
 class TWC_Backpack_ColdWar_Regular_Rifleman: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 300;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd,8);
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T,5);
@@ -38,7 +38,7 @@ class TWC_Backpack_ColdWar_Regular_Rifleman: sp_webbing_58pattern_LargePack
 class TWC_Backpack_ColdWar_Regular_MGASS: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 350;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd,5);
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T,3);
@@ -48,7 +48,7 @@ class TWC_Backpack_ColdWar_Regular_MGASS: sp_webbing_58pattern_LargePack
 class TWC_Backpack_ColdWar_Regular_MG: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 300;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, 8);
 	};
@@ -57,26 +57,26 @@ class TWC_Backpack_ColdWar_Regular_MG: sp_webbing_58pattern_LargePack
 class TWC_Backpack_ColdWar_Regular_2iC: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
-	maximumLoad = 350;
+	maximumLoad = 400;
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_762_20Rnd, 6);
-		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 12);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 6);
 		ADD_MAGA(SP_32Rnd_9x19_L2A3_Sterling, 4);
 		ADD_MAGA(SmokeShell, 2);
-		ADD_MAGA(UK3CB_BAF_762_100Rnd, 3);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd, 2);
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, 2);
 	};
 	
 	class TransportItems {
-		ADD_ITEM(ACE_morphine,4);
-		ADD_ITEM(ACE_epinephrine,2);
+		ADD_ITEM(ACE_fieldDressing,20);
+		ADD_ITEM(kat_Painkiller,5);
 	};
 };
 class TWC_Backpack_ColdWar_Regular_AT: SP_Backpack_CarlGustavCarrier
 {
 	scope = 1;
-	maximumLoad = 350;
+	maximumLoad = 300;
 	class TransportMagazines {
 		ADD_MAGA(SP_32Rnd_9x19_L2A3_Sterling, 4);
 		ADD_MAGA(MAA_MAAWS_GMM_HEAT,2);
@@ -88,7 +88,7 @@ class TWC_Backpack_ColdWar_Regular_AT: SP_Backpack_CarlGustavCarrier
 class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
 {
 	scope = 1;
-	maximumLoad = 400;
+	maximumLoad = 350;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 4);
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 2);
