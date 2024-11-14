@@ -57,7 +57,7 @@ class TWC_Backpack_ColdWar_Regular_MG: sp_webbing_58pattern_LargePack
 class TWC_Backpack_ColdWar_Regular_2iC: sp_webbing_58pattern_LargePack
 {
 	scope = 1;
-	maximumLoad = 450;
+	maximumLoad = 470;
 	
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 12);
@@ -69,7 +69,10 @@ class TWC_Backpack_ColdWar_Regular_2iC: sp_webbing_58pattern_LargePack
 	};
 	
 	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
+		ADD_ITEM(ACE_fieldDressing,10);
+		ADD_ITEM(ACE_elasticBandage,5);
+		ADD_ITEM(ACE_quikclot,5);
+		ADD_ITEM(ACE_packingBandage,10);
 		ADD_ITEM(kat_Painkiller,5);
 	};
 };
