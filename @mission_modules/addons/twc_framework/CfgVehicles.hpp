@@ -1,4 +1,6 @@
 class CfgVehicles {
+	
+	#include "backpacks.hpp"
 	class Logic;
 	class ModuleOrdnanceMortar_F;
 	
